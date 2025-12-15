@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            line-height: 1.6;
+        }
+        
+        #layout-menu {
+            background: #f4f4f4;
+            border-right: 1px solid #dddddd;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding: 20px 15px;
+            overflow-y: auto;
+        }
+        
+        #layout-menu a {
+            display: block;
+            color: #224b8d;
+            text-decoration: none;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        
+        #layout-menu a:hover {
+            text-decoration: underline;
+        }
+        
+        #layout-menu .menu-category {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #527bbd;
+        }
+        
+        #layout-content {
+            margin-left: 240px;
+            padding: 30px 50px;
+            max-width: 900px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #527bbd;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #527bbd;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            color: #224b8d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #224b8d;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .infoblock {
+            background-color: #ffffee;
+            border: 1px solid #e5e5e5;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .profile-section {
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            width: 220px;
+            height: 220px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            #layout-menu {
+                position: relative;
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #dddddd;
+            }
+            
+            #layout-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="layout-menu">
+        <div class="menu-category">Your Name</div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <!-- <a href="#contact">Contact</a> -->
+    </div>
+    
+    <div id="layout-content">
+        <div id="toptitle">
+            <h1>Your Name</h1>
+        </div>
+        
+        <div class="profile-section">
+            <div class="profile-img">
+                <img src="./img/myphoto.jpeg" alt="Your Name">
+            </div>
+            <p>Assistant Professor (Incoming)<br>
+            Department of AI and Data Science<br>
+            The University of Hong Kong<br>
+            Email: jianqian@hku.hk<br>
+            <a href="https://scholar.google.com/citations?user=RTFd7KwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            </p>
+            <div style="clear: both;"></div>
+        </div>
+        
+        <h2 id="about">About me</h2>
+        <p>Welcome to my homepage! I am an incoming Assistant Professor at the Department of AI and Data Science, The University of Hong Kong. I recently obtained my Ph.D. from the Department of EECS, MIT, where it was my great plesure to be advised by <a href="https://www.mit.edu/~rakhlin/">Sasha Rakhlin</a>. Prior to MIT, I received my diplome in Math/CS from Ecole Normale Superieure, Paris in 2019 and a B.S. in Math from the University of Science and Technology of China in 2017.
+            <!-- , where I was very fortunate to work with <a href="https://scholar.google.com/citations?user=Bh2B98cAAAAJ&hl=en">Prof. Jian Qian</a>.</p> -->
+        
+        <h2 id="research">Research Interests</h2>
+        <p>My research primarily focuses on the intersection between machine learning theory and interactive decision making.
+             <!-- ranging from online learning, bandits to reinforcement learning.   -->
+             I am particularly interested in:</p>
+        <ul>
+            <li>Statistical learning theory</li>
+            <li>Bandits and reinforcement learning</li>
+            <!-- <li>Reinforcement learning</li> -->
+            <li>Online learning</li>
+        </ul>
+        
+        <div class="infoblock">
+            <strong>Note:</strong> I am looking for motivated PhD students to join my research group. If you are interested, please send me an email with your CV and research interests.
+        </div>
+        
+        <h2 id="publications">Selected Publications</h2>
+        
+        <!-- <h3>2024</h3> -->
+        <ul>
+            <li><strong>Refined Risk Bounds for Unbounded Losses via Transductive Priors
+            </strong><br>
+            <u>Jian Qian</u>, Alexander Rakhlin, Nikita Zhivotovskiy<br>
+            <!-- <i>Under Review at JMLR (minor revision)</i><br> -->
+            [<a href="https://arxiv.org/abs/2410.21621">paper</a>] 
+            <!-- [<a href="#">code</a>]</li> -->
+            
+            <li><strong>The Statistical Complexity of Interactive Decision Making</strong><br>
+            Dylan J Foster, Sham Kakade, <u>Jian Qian</u>, Alexander Rakhlin<br>
+            <!-- <i>International Conference on Machine Learning (ICML)</i>, 2024<br> -->
+            [<a href="https://arxiv.org/abs/2112.13487">paper</a>]</li>
+        </ul>
+        
+        <!-- <h3>2023</h3> -->
+        <ul>
+            <li><strong>To bootstrap or to rollout? An optimal and adaptive interpolation</strong><br>
+            Wenlong Mou, <u>Jian Qian</u><br>
+            <!-- <i>Journal of Machine Learning Research (JMLR)</i>, 2023<br> -->
+            [<a href="https://arxiv.org/abs/2411.09731">paper</a>]</li>
+        </ul>
+
+        <ul>
+            <li><strong>Convex and Non-Convex Optimization under Generalized Smoothness</strong><br>
+            Haochuan Li, <u>Jian Qian</u>, Yi Tian, Alexander Rakhlin, Ali Jadbabaie <br>
+            <!-- <i>Journal of Machine Learning Research (JMLR)</i>, 2023<br> -->
+            [<a href="https://arxiv.org/abs/2306.01264">paper</a>]</li>
+        </ul>
+        
+        <h2 id="teaching">Teaching</h2>
+        <ul>
+            <li><strong>Fall 2025 (at NYU):</strong> UA-MATH 334 - Mathematical Statistics</li>
+            <!-- <li><strong>Spring 2024:</strong> CS 229 - Machine Learning</li> -->
+            <!-- <li><strong>Fall 2023:</strong> CS 229 - Machine Learning</li> -->
+        </ul>
+        
+        <!-- <h2>Mathematical Example</h2>
+        <p>The optimization problem we consider is:</p>
+        <p style="text-align: center;">
+            \[\min_{x \in \mathbb{R}^d} f(x) = \frac{1}{n}\sum_{i=1}^n \ell(x; \xi_i) + \lambda \|x\|_2^2\]
+        </p>
+        <p>where \(\ell(\cdot; \xi)\) is the loss function and \(\lambda > 0\) is the regularization parameter.</p> -->
+        
+        <!-- <h2 id="contact">Contact</h2>
+        <p>
+            Office: Room 123, Building Name<br>
+            Address: 123 University Ave, City, State 12345<br>
+            Email: yourname [at] university [dot] edu
+        </p> -->
+        
+        <hr style="margin-top: 50px; border: none; border-top: 1px solid #e5e5e5;">
+        <p style="font-size: 12px; color: #666;">Last updated: December 2024</p>
+    </div>
+</body>
+</html>
+
